@@ -1,0 +1,75 @@
+{
+	"bundleVersion": 1,
+	"version": "1.0.1",
+	"icon": "icon.png",
+	"identifier": "co.free-flow.libraryenabler",
+	"description": "Quickly enable Libraries used in current Document and manage Library presets",
+	"homepage": "http://free-flow.co/",
+	"author": "Francesco Bertocci",
+	"authorEmail": "francesco@freeandwilling.com",
+	"compatibleVersion": 79,
+	"commands": [
+    {
+			"name": "Enable Workspace Libraries used in Document",
+			"identifier": "Enable-Doc-Libraries",
+			"script": "enable-doc-libraries.js"
+    },
+    {
+			"name": "Only enable Workspace Libraries used in Document (disable others)",
+			"identifier": "Enable-Only-Doc-Libraries",
+			"script": "enable-only-doc-libraries.js"
+    },
+    {
+			"name": "Enable Libraries preset",
+			"identifier": "Enable-Libraries-Preset",
+			"script": "enable-libraries-preset.js",
+			"shortcut": "ctrl option shift cmd l"
+    },
+    {
+			"name": "Manage Libraries presets",
+			"identifier": "Manage-Libraries-Presets",
+			"script": "manage-libraries-presets.js"
+    },
+    {
+			"name": "Save Active Libraries list as preset",
+			"identifier": "Active-Libraries-As-Preset",
+			"script": "active-libraries-preset.js"
+    },
+		{
+      "name": "Disable All Libraries",
+			"identifier": "Disable-All-Libraries",
+			"script": "disable-all-libraries.js"
+    },
+		{
+      "name": "Enable All Libraries",
+			"identifier": "Enable-All-Libraries",
+			"script": "enable-all-libraries.js"
+    },
+		{
+      "name": "Remove All Libraries",
+			"identifier": "Remove-All-Libraries",
+			"script": "remove-all-libraries.js"
+    },
+  	],
+	"menu": {
+		"title": "📚 Library Enabler",
+		"items": [
+			"Enable-Libraries-Preset",
+			"Active-Libraries-As-Preset",
+			"Manage-Libraries-Presets",
+			"-",
+			"Enable-Doc-Libraries",
+			"Enable-Only-Doc-Libraries",
+						{
+				"title": "All Libraries...",
+				"items": [
+					"Enable-All-Libraries",
+					"Disable-All-Libraries",
+					"Remove-All-Libraries"
+				]
+			},
+		]
+	},
+	"title": "Library Enabler",
+	"copyright": "Copyright © 2022 Francesco Bertocci, LLC. All rights reserved.",
+}
