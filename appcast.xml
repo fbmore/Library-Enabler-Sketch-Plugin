@@ -2,7 +2,7 @@
   <channel>
     <title>Library Enabler</title>
     <link>https://raw.githubusercontent.com/fbmore/Library-Enabler-Sketch-Plugin/main/appcast.xml</link>
-    <description>Import, Export and Update Color Variables and Tokens.</description>
+    <description>Quickly enable Libraries used in current Document and manage Library presets.</description>
     <language>en</language>
     <item>
       <title>Version 1.0.1</title>
